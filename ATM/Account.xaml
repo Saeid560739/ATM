@@ -1,0 +1,49 @@
+﻿<Window x:Class="ATM.Account"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM"
+        mc:Ignorable="d"
+        Title="Account" Height="450" Width="425.774">
+    <Grid Background="#FFE67E22" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="145*"/>
+            <ColumnDefinition Width="272*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="lblFullName" Content="User Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,29,0,0" Width="103" Foreground="White" FontSize="18" Height="34" FontWeight="Bold" Grid.ColumnSpan="2"/>
+        <Label Name="lblAccount" Content="Accuont " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,63,0,0" Width="135" Foreground="White" Height="31" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Name="lblAmount" Content="100,00" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139.5,29,0,0" Width="94" Foreground="White" FontSize="18" FontWeight="Bold" Height="34" Grid.Column="1"/>
+        <Label Content="EUR" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97.5,29,0,0" Width="42" Foreground="White" FontSize="18" Height="34" Grid.Column="1"/>
+        <Button Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Height="38" Margin="97.5,306,0,0" VerticalAlignment="Top" Width="134" Background="#FFE67E22" BorderBrush="White" Foreground="White" Cursor="Hand" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="btnToWithdraw" Content="To withdraw" HorizontalAlignment="Left" Height="38" Margin="44,306,0,0" VerticalAlignment="Top" Width="134" Background="#FFE67E22" BorderBrush="White" Foreground="White" Cursor="Hand" Grid.ColumnSpan="2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Name="lblamount1" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139.5,113,0,0" Width="82" Height="30" FontSize="18" Grid.Column="1"/>
+        <Label Name="lblamount2" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139.5,162,0,0" Width="82" Height="41" FontSize="18" Grid.Column="1"/>
+        <Label Name="lblamount3" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="139.5,208,0,0" Width="82" Height="30" FontSize="18" Grid.Column="1"/>
+        <Label Name="lblplusMin1" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114.5,113,0,0" Width="20" Height="30" FontSize="18" Grid.Column="1"/>
+        <Label Name="lblplusMin2" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114.5,162,0,0" Width="20" Height="30" FontSize="18" Grid.Column="1"/>
+        <Label Name="lblplusMin3" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="114.5,208,0,0" Width="20" Height="30" FontSize="18" Grid.Column="1"/>
+        <Label Name="lbldate1" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,113,0,0" Width="167" Height="30" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Name="lbldate2" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,162,0,0" Width="167" Height="30" FontSize="16" Grid.ColumnSpan="2"/>
+        <Label Name="lbldate3" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="44,208,0,0" Width="167" Height="30" FontSize="16" Grid.ColumnSpan="2"/>
+        <Button Name="btnSignOut" Content="Sign out" HorizontalAlignment="Left" Height="38" Margin="0.5,360,0,0" VerticalAlignment="Top" Width="134" Background="#FFE67E22" BorderBrush="White" Foreground="White" Cursor="Hand" Grid.Column="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>

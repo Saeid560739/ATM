@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Saeid Alebraheem\\source\\repos\\ATM\\ATM\\ATM.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Saeid Alebraheem\\source\\repos\\ATM\\ATM\\ATM.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Saeid Alebraheem\\source\\repos\\ATM\\ATM\\ATM.csproj",
+        "projectName": "ATM",
+        "projectPath": "C:\\Users\\Saeid Alebraheem\\source\\repos\\ATM\\ATM\\ATM.csproj",
+        "packagesPath": "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Saeid Alebraheem\\source\\repos\\ATM\\ATM\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\Saeid Alebraheem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.32, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

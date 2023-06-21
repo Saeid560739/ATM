@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "Di8uaZPtzojZZk6YgdHa5w2YWjoWAMUoL7+CltuxFjoA8C1ZvhrFaqiQDzWeWso/IIkEMcSqmnnONtmrgwBmNA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Saeid Alebraheem\\source\\repos\\ATM\\ATM_Admin\\ATM_Admin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\k4os.compression.lz4.streams\\1.2.6\\k4os.compression.lz4.streams.1.2.6.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\k4os.hash.xxhash\\1.0.6\\k4os.hash.xxhash.1.0.6.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\mysql.data\\8.0.32.1\\mysql.data.8.0.32.1.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\system.data.common\\4.3.0\\system.data.common.4.3.0.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Saeid Alebraheem\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

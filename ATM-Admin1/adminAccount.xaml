@@ -1,0 +1,92 @@
+﻿<Window x:Class="ATM_Admin1.adminAccount"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ATM_Admin1"
+        mc:Ignorable="d"
+        Title="adminAccount" Height="450" Width="800">
+    <Grid Background="#FFE67E22">
+
+        <Label Name="lblName" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="556,2,0,0" Width="235" Height="38" Content="aaaaaa" FontWeight="Bold" FontSize="20" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.203"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <DataGrid Name="dgusers" AutoGenerateColumns="False" 
+                                         HorizontalAlignment="Left" 
+                                         HorizontalScrollBarVisibility="Disabled" 
+                                         Margin="63,84,0,86" 
+                                         Width="665" 
+                                         ItemsSource="{Binding Path=LoadDataBinding}" 
+                                         CanUserResizeRows="False"
+                                         CanUserAddRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=userID}" Header="ID" Width="100" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=fullName}" Header="Name" Width="200" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=bankAccount}" Header="Bank account" Width="200" IsReadOnly="True" />
+
+                <DataGridTemplateColumn Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Edit" Click="btnEdit_Click" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Width="70">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Delete" Click="btnDelete_Click" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Name="lblID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="556,38,0,0" Width="236" Height="38" FontWeight="Bold" FontSize="20" Content="aaaaaa"/>
+        <Button Name="btnAdd" Cursor="Hand" Content="New customer" HorizontalAlignment="Left" Height="38" Margin="64,358,0,0" VerticalAlignment="Top" Width="168" Background="#FFE67E22" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.5,0.5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.111"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="btnLogout" Cursor="Hand" Content="Log out" HorizontalAlignment="Left" Height="38" Margin="561,358,0,0" VerticalAlignment="Top" Width="168" Background="#FFE67E22" BorderBrush="White" Foreground="White" RenderTransformOrigin="0.5,0.5">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </Button.Resources>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="1.111"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox Text="" Name="txtSearch" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" Margin="242,42,0,0" KeyUp="txtSearch_KeyUp" FontSize="20">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="7"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Label Content="Find bank account" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="63,38,0,0" Height="34" Width="174" FontSize="20"/>
+
+    </Grid>
+</Window>
